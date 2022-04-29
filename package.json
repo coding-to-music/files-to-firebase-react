@@ -15,7 +15,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
     "build": "cd client && npm install && npm run build",
-    "start": "cd client && npm run start",
+    "start": "node index.js",
+    "oldstart": "cd client && npm run start",
     "deploy": "git add . && git commit -m Build && git push && git push heroku && heroku logs --tail --remote heroku"
   },
   "keywords": [],
