@@ -38,6 +38,8 @@ REACT_APP_BUCKET_URL=""
 	const url = process.env.REACT_APP_API_URL + "/songs"
 
     await mongoose.connect(process.env.MONGODB_URI, connectionParams);
+	const storage = getStorage(app, process.env.REACT_APP_BUCKET_URL);
+	export default storage;
 
 ```
 
